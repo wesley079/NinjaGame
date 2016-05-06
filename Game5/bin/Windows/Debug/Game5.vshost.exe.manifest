@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Game5.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Game5" version="3.3.0.2238" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Game5.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game5.exe" size="178080">
+      <assemblyIdentity name="Game5" version="3.3.0.2238" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>osPftllQkEGWZIAmPEXSm0QNTfE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MonoGame.Framework.dll" size="739328">
+      <assemblyIdentity name="MonoGame.Framework" version="3.3.0.2238" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>gYbhMPrg8JJDM2RCc1A8vFAZe94=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.dll" size="550400">
+      <assemblyIdentity name="SharpDX" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>LqhzeS+nRqtUgQDtxexwYF2mvX4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.Direct2D1.dll" size="230912">
+      <assemblyIdentity name="SharpDX.Direct2D1" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GRN0gdZguACwiGU6AvaJfgowkpI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.Direct3D11.dll" size="170496">
+      <assemblyIdentity name="SharpDX.Direct3D11" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>bvLFZm9yJs72gNgQTGKQG8+cU4o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.Direct3D9.dll" size="349696">
+      <assemblyIdentity name="SharpDX.Direct3D9" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>tVhgUIvCw+KirEl9KyxaVOjaXd8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.DXGI.dll" size="89600">
+      <assemblyIdentity name="SharpDX.DXGI" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>QbmIpoISQZxwrd7lKAjr4gpQAp0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.MediaFoundation.dll" size="683520">
+      <assemblyIdentity name="SharpDX.MediaFoundation" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ubXRCtxEpqlrbmnEsOIiF3yr+bc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.RawInput.dll" size="20480">
+      <assemblyIdentity name="SharpDX.RawInput" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CX0tAPJslxweP76tZg81LL+8O1s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.XAudio2.dll" size="87040">
+      <assemblyIdentity name="SharpDX.XAudio2" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ri+Cn2fPVBewyH5M1LDTc6B7ZRg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SharpDX.XInput.dll" size="11776">
+      <assemblyIdentity name="SharpDX.XInput" version="2.5.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>J+SrisKScfd3i/rHevA7PMJ9Dy4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Content\Background.jpg" size="1110280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PC4Snee1ZwBFFin6EMl8cSO75Bg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Dead__000.png" size="104564">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>H/eGPvyPIoqhqp8bIqBmnya2TTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__000.png" size="83010">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LOXLlDS9IT0OB0fIivhlhpespNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__001.png" size="78087">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sA7OhaeZQaqGmbDcGYyHMLwyW8o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__002.png" size="74869">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bETOYrRIdl3Dqve/obJrTZejfx4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__003.png" size="80764">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mHlk4U9LFTtrJ+FPTcWcat27YYU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__004.png" size="93188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gRV4Wy62PIE01i/JPHBJy4WNP9Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__005.png" size="90795">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5LZWBs4XBDB9S77bFiBg/WB2R1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__006.png" size="90524">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tDFvJAZVlw0VLNPlw2IXg0rFHts=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__007.png" size="88796">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ARA7fVfA5BK9hJotL46maStIRUk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__008.png" size="85620">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>K669+6d35X6qMdxXBNUqcz3xaiI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Attack\Attack__009.png" size="89394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Fb5qYDB2kvo5kKmqPdK18h8pLmo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__000.png" size="65321">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GW9bwzrQwzxGvY/E/gfmkfw3H3I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__001.png" size="70899">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xq5ARBX01M32C65bCmSR7WABTTA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__002.png" size="69472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>320xKjnDujMW7B84hWpMhLBWCHM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__003.png" size="68023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZgMN5/Rfwr6dKF2c7JnaYIegSLU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__004.png" size="67667">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3r/xHXTh20JSAhU6Y1SbftbRrIY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__005.png" size="67538">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zNuk6YOfYst/NK1dVI+CpzEX4gg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__006.png" size="63227">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HNQpuMP141/rgHtZb3DjMb4WDrI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__007.png" size="65460">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tvwFHuK3WoqBeDkoyXs1xvKJ+Qo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__008.png" size="64594">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5TomsY3gaRAqQCOR0GhdHNLDGiU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaEnemy\Running\Run__009.png" size="62704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sa9ESdac1GJsfHkII+N4Is8cCdU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__000.png" size="116047">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FC9+WWMkSawyCSPZht0O5JMb3nQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__001.png" size="111456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zp7y/ob0l3tRiWFWge2BRPI8NXo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__002.png" size="110655">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bo3tkJ5U3hJ8tYtRnBxvuRDoGtM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__003.png" size="115404">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dXn8Qo15uW+kctK/AQCNKRZ3cDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__004.png" size="129939">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8vaxDsR4RpFLtrv8NcmieHBqk94=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__005.png" size="129850">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gurSyOvJwmhnu/oyhfHMVxVuRwU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__006.png" size="128952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9lNar2w0xW55QxaiYZGF6b2l3FA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__007.png" size="127117">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MxYG7dDURWK9tWpaZmz1d63FSV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__008.png" size="123303">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fFkax2tNb3j0WQZkWXzCHXMzyVg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Attack\Attack__009.png" size="123708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WCiHU8Ph7mjtbv3+N6ormCHsOnw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__000.png" size="114767">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Nz60CKEZfdPBRFgWdfdx8JfzlSo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__001.png" size="115001">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XRIUKiG8lnB1evN1c24MAJgc/ww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__002.png" size="107427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>m7YMO1zwzBiQoAiVr2sf5L8acos=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__003.png" size="106926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rhCn+2m/Z914yiUxLvYapafkq9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__004.png" size="106926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rhCn+2m/Z914yiUxLvYapafkq9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__005.png" size="106926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rhCn+2m/Z914yiUxLvYapafkq9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__006.png" size="113072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vpNGGva5n7icvjv2b7AqgxRLdDs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__007.png" size="108763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5SCATe1OCqy5zucsOdeVhvaJRqk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__008.png" size="107743">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3FWL2Y/lxlXkbDg9F5vCn2NZwUI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Jumping\Jump__009.png" size="107743">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3FWL2Y/lxlXkbDg9F5vCn2NZwUI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__000.png" size="101955">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RpicnB571Zt6nNo7nnWVZGpXB/I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__001.png" size="103701">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1RN57vQSq8flAIzQRSpImlKb11E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__002.png" size="104149">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AtjjvCcC23mdXxdjNWfYYBi1P/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__003.png" size="103882">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8F7ETnTogxSsga0mPTDBZ8Z8COo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__004.png" size="104172">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wKKrSZzRk8vGzlHu/v1HP4y7WsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__005.png" size="104272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NRhEJcDw1V+HZdHQ651nXbPBXt8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__006.png" size="104228">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PRv+ScrFfASAL7+uFcpnsDLGAGc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__007.png" size="104113">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>51kzJEzRfpuEXFEbBclAIPftqBg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__008.png" size="104248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9uFfkVWrnC+8pKgpRYkygA9TnoI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Rest\Idle__009.png" size="103672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Luk7dpylOvj022BKVmaNevvyMoE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__000.png" size="101698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>apviZX6KtbFXywsRnqRJRaoHlO8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__001.png" size="108276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZdzMoCfOL9cNsrTV/Zjm0UhKpGI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__002.png" size="107323">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pKbJHd4UpI6AC/6y492pLjdi7Ec=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__003.png" size="105954">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Rkp1KM7YB3N406bzg1m5GSwMZuA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__004.png" size="106073">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uORNstP31hayN2I2xK89v2xqRiM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__005.png" size="105238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6qB9+roSLTBVFCEA8PyuGqeaTPI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__006.png" size="99755">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V8KLtvam3aRN/y80GL9zIpJn1ys=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__007.png" size="103973">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HRJH33bX2pV4NH53ZmTaMeq9E5E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__008.png" size="103427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0u8yom2ZzLAlvl3+WeptjMKi8wU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Running\Run__009.png" size="100311">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y5zQ5jTM+htXEBqjsigsY6n/Cho=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Kunai.png" size="2429">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NCM3JKXx4XrAUt3kogkBYsCDQWQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__000.png" size="108589">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gd4SA+MViwmIGNy24qLYNmulzxU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__001.png" size="115203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nGtQCnh7bJx7Tm3u+CAzx4vUdZU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__002.png" size="117172">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>m9RDmWxw3dxWvn+uWwWYJFnKbOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__003.png" size="110485">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wTHpHehTQTgYZ96PX3byleSNrpQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__004.png" size="107739">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YwilBzdR86QGnZM+UBA9sD8ut/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__005.png" size="107903">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Vjxnt53//lJbrYjqUK1eSqxL19c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__006.png" size="107381">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bS/U1Z3FQRoLOOpVDCncodL23Zo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__007.png" size="111616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nihn15qKK2S80GHD2AycdLGg+X4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__008.png" size="114306">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BzWiMqkHU1P0O3GPbwVG3vnAELY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\NinjaGirl\Throw\Throw__009.png" size="116197">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>i9NarRWhHhOr3vwL8hzWOqPXzao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icon.ico" size="147541">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>f+7gGnvdgBlfPh4ucO68FI6yGRk=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
